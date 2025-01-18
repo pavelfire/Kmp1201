@@ -13,7 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.vk.directop.coin_detail.components.InfoCard
+import com.vk.directop.cryptotracker.presentation.coin_detail.components.InfoCard
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
@@ -38,6 +38,7 @@ fun App() {
                 title = "Market capitalization",
                 formattedText = "$ 823,157.44",
                 icon = Icons.Filled.Done
+
             )
             AnimatedVisibility(showContent) {
                 val greeting = remember { Greeting().greet() }
