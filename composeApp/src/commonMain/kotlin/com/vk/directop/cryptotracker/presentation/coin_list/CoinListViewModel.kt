@@ -1,16 +1,14 @@
 package com.vk.directop.cryptotracker.presentation.coin_list
 
 
-import androidx.compose.ui.text.intl.Locale
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vk.directop.core.domain.util.onError
-import com.vk.directop.core.domain.util.onSuccess
+import com.vk.directop.core.domain.onError
+import com.vk.directop.core.domain.onSuccess
 import com.vk.directop.cryptotracker.domain.CoinDataSource
 import com.vk.directop.cryptotracker.presentation.coin_detail.DataPoint
 import com.vk.directop.cryptotracker.presentation.models.CoinUi
 import com.vk.directop.cryptotracker.presentation.models.toCoinUi
-import io.ktor.http.HttpHeaders.Date
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -20,7 +18,6 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.datetime.*
-import kotlinx.datetime.format.DateTimeFormat
 import kotlin.time.Duration.Companion.days
 
 

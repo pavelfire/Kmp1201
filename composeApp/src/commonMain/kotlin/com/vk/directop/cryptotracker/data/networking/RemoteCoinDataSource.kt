@@ -2,9 +2,9 @@ package com.vk.directop.cryptotracker.data.networking
 
 import com.vk.directop.core.data.constructUrl
 import com.vk.directop.core.data.safeCall
-import com.vk.directop.core.domain.util.NetworkError
-import com.vk.directop.core.domain.util.Result
-import com.vk.directop.core.domain.util.map
+import com.vk.directop.core.domain.NetworkError
+import com.vk.directop.core.domain.Result
+import com.vk.directop.core.domain.map
 import com.vk.directop.cryptotracker.data.mappers.toCoin
 import com.vk.directop.cryptotracker.data.mappers.toCoinPrice
 import com.vk.directop.cryptotracker.data.networking.dto.CoinHistoryDto

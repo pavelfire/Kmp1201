@@ -1,4 +1,4 @@
-package com.vk.directop.core.domain.util
+package com.vk.directop.core.domain
 
 typealias DomainError = Error
 

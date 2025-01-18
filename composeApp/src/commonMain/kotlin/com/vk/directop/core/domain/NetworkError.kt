@@ -1,6 +1,4 @@
-package com.vk.directop.core.domain.util
-
-import com.vk.directop.core.domain.util.Error
+package com.vk.directop.core.domain
 
 enum class NetworkError : Error {
     REQUEST_TIMEOUT,

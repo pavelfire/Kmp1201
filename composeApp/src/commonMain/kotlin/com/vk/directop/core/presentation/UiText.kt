@@ -1,4 +1,4 @@
-package com.vk.directop.core.presentation.util
+package com.vk.directop.core.presentation
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.resources.StringResource

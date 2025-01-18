@@ -1,7 +1,7 @@
 package com.vk.directop.cryptotracker.domain
 
-import com.vk.directop.core.domain.util.NetworkError
-import com.vk.directop.core.domain.util.Result
+import com.vk.directop.core.domain.NetworkError
+import com.vk.directop.core.domain.Result
 import kotlinx.datetime.LocalDateTime
 
 interface CoinDataSource {

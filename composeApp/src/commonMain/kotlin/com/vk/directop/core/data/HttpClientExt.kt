@@ -1,7 +1,7 @@
 package com.vk.directop.core.data
 
-import com.vk.directop.core.domain.util.NetworkError
-import com.vk.directop.core.domain.util.Result
+import com.vk.directop.core.domain.NetworkError
+import com.vk.directop.core.domain.Result
 import io.ktor.client.call.NoTransformationFoundException
 import io.ktor.client.call.body
 import io.ktor.client.network.sockets.SocketTimeoutException
