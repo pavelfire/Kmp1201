@@ -1,4 +1,4 @@
-package com.vk.directop.core.domain
+package com.vk.directop.cryptotracker.core.domain
 
 typealias DomainError = Error
 

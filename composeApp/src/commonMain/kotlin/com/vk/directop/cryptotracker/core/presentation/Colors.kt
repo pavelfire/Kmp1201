@@ -1,4 +1,4 @@
-package com.vk.directop.core.presentation
+package com.vk.directop.cryptotracker.core.presentation
 
 import androidx.compose.ui.graphics.Color
 

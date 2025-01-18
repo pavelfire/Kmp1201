@@ -16,7 +16,7 @@ fun CoinDto.toCoin(): Coin {
         symbol = symbol,
         marketCapUsd = marketCapUsd,
         priceUsd = priceUsd,
-        changePercent24h = changePercent24Hr,
+        changePercent24h = changePercent24Hr ?: 0.0,
     )
 }
 
@@ -25,6 +25,5 @@ fun CoinPriceDto.toCoinPrice(): CoinPrice {
         priceUsd = priceUsd,
         dateTime = Instant.fromEpochMilliseconds(time)
             .toLocalDateTime(TimeZone.currentSystemDefault())
-//            .toInstant(TimeZone.currentSystemDefault())
     )
 }

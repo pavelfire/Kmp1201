@@ -20,7 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.vk.directop.core.presentation.greenBackground
+import com.vk.directop.cryptotracker.core.presentation.greenBackground
 import com.vk.directop.cryptotracker.presentation.models.DisplayableNumber
 
 

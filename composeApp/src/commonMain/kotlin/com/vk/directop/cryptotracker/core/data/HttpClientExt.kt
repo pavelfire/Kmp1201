@@ -1,7 +1,7 @@
-package com.vk.directop.core.data
+package com.vk.directop.cryptotracker.core.data
 
-import com.vk.directop.core.domain.NetworkError
-import com.vk.directop.core.domain.Result
+import com.vk.directop.cryptotracker.core.domain.NetworkError
+import com.vk.directop.cryptotracker.core.domain.Result
 import io.ktor.client.call.NoTransformationFoundException
 import io.ktor.client.call.body
 import io.ktor.client.network.sockets.SocketTimeoutException

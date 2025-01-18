@@ -1,4 +1,4 @@
-package com.vk.directop.core.data
+package com.vk.directop.cryptotracker.core.data
 
 const val BASE_URL = "https://api.coincap.io/v2/"
 

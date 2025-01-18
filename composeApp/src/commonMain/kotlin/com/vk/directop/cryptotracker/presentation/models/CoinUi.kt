@@ -1,6 +1,6 @@
 package com.vk.directop.cryptotracker.presentation.models
 
-import com.vk.directop.core.presentation.getDrawableIdForCoin
+import com.vk.directop.cryptotracker.core.presentation.getDrawableIdForCoin
 import com.vk.directop.cryptotracker.domain.Coin
 import com.vk.directop.cryptotracker.presentation.coin_detail.DataPoint
 import org.jetbrains.compose.resources.DrawableResource

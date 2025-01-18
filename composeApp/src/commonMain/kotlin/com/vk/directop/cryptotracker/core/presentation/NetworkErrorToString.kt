@@ -1,6 +1,6 @@
-package com.vk.directop.core.presentation
+package com.vk.directop.cryptotracker.core.presentation
 
-import com.vk.directop.core.domain.NetworkError
+import com.vk.directop.cryptotracker.core.domain.NetworkError
 import kmp1201.composeapp.generated.resources.Res
 import kmp1201.composeapp.generated.resources.error_no_internet
 import kmp1201.composeapp.generated.resources.error_request_timeout

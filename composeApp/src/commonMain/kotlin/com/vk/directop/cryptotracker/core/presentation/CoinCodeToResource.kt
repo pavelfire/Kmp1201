@@ -1,4 +1,4 @@
-package com.vk.directop.core.presentation
+package com.vk.directop.cryptotracker.core.presentation
 
 import kmp1201.composeapp.generated.resources.Res
 import kmp1201.composeapp.generated.resources._inch

@@ -1,4 +1,4 @@
-package com.vk.directop.core.data
+package com.vk.directop.cryptotracker.core.data
 
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.HttpClientEngine

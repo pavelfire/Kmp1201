@@ -3,8 +3,8 @@ package com.vk.directop.cryptotracker.presentation.coin_list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vk.directop.core.domain.onError
-import com.vk.directop.core.domain.onSuccess
+import com.vk.directop.cryptotracker.core.domain.onError
+import com.vk.directop.cryptotracker.core.domain.onSuccess
 import com.vk.directop.cryptotracker.domain.CoinDataSource
 import com.vk.directop.cryptotracker.presentation.coin_detail.DataPoint
 import com.vk.directop.cryptotracker.presentation.models.CoinUi
