@@ -2,13 +2,13 @@ package com.vk.directop.cryptotracker.domain
 
 import com.vk.directop.core.domain.util.NetworkError
 import com.vk.directop.core.domain.util.Result
-import kotlinx.datetime.Instant
+import kotlinx.datetime.LocalDateTime
 
 interface CoinDataSource {
     suspend fun getCoins(): Result<List<Coin>, NetworkError>
     suspend fun getCoinHistory(
         coinId: String,
-        start: Instant,
-        end: Instant,
+        start: LocalDateTime,
+        end: LocalDateTime,
     ): Result<List<CoinPrice>, NetworkError>
 }
