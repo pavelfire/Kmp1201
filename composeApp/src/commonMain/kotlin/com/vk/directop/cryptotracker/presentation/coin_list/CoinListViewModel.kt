@@ -6,6 +6,8 @@ import androidx.lifecycle.viewModelScope
 import com.vk.directop.cryptotracker.core.domain.onError
 import com.vk.directop.cryptotracker.core.domain.onSuccess
 import com.vk.directop.cryptotracker.domain.CoinDataSource
+import com.vk.directop.cryptotracker.logger.Logger
+import com.vk.directop.cryptotracker.logger.LoggerFactory
 import com.vk.directop.cryptotracker.presentation.coin_detail.DataPoint
 import com.vk.directop.cryptotracker.presentation.models.CoinUi
 import com.vk.directop.cryptotracker.presentation.models.toCoinUi
@@ -40,10 +42,13 @@ class CoinListViewModel(
     private val _events = Channel<CoinListEvent>()
     val events = _events.receiveAsFlow()
 
+    val logger = LoggerFactory.create()
+
     fun onAction(action: CoinListAction) {
         when (action) {
             is CoinListAction.OnCoinClick -> {
                 selectCoin(action.coinUi)
+                logger.debug("Clicked coin ${action.coinUi}")
             }
 
             CoinListAction.OnRefresh -> loadCoins()
