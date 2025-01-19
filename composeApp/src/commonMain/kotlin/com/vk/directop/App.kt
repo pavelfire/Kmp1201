@@ -36,7 +36,9 @@ fun App() {
 
                 CoinListScreen(
                     state = state,
-                    onAction = {}
+                    onAction = {
+                        viewModel.onAction(action = it)
+                    }
                 )
             }
 

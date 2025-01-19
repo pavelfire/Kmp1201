@@ -17,7 +17,10 @@ import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import kotlinx.datetime.*
+import kotlinx.datetime.Clock
+import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import kotlin.time.Duration.Companion.days
 
 
@@ -115,13 +118,13 @@ class CoinListViewModel(
                 }
         }
     }
+}
 
-    private fun formatLocalDateTime(dateTime: LocalDateTime): String {
-        val hour = if (dateTime.hour % 12 == 0) 12 else dateTime.hour % 12
-        val amPm = if (dateTime.hour < 12) "AM" else "PM"
-        val month = dateTime.monthNumber
-        val day = dateTime.dayOfMonth
+fun formatLocalDateTime(dateTime: LocalDateTime): String {
+    val hour = if (dateTime.hour % 12 == 0) 12 else dateTime.hour % 12
+    val amPm = if (dateTime.hour < 12) "AM" else "PM"
+    val month = dateTime.monthNumber
+    val day = dateTime.dayOfMonth
 
-        return "$hour$amPm\n$month/$day"
-    }
+    return "$hour$amPm\n$month/$day"
 }
